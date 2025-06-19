@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(39, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2rem;
+}
+#result{
+    color: white;
+}
+#inputNumber{
+    margin: 0.2rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+}
+button{
+    margin: 0.2rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+p{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3rem;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgb(17, 72, 98) ;
+}
