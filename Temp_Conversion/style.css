@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(39, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2rem;
+}
+#main{
+display: flex;
+gap: 20px;
+
+}
+#result{
+    color: white;
+}
+#inputTemp{
+    margin: 0.2rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+#selectTemp{
+    margin: 0.2rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+button{
+    margin: 0.2rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+p{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    padding: 3rem;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgb(17, 72, 98) ;
+}
