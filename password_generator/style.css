@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #cbe3ef, #96c1ec);
+  color: rgb(18, 16, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  text-align: center;
+}
+
+.output-box {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.output-box input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+     border-radius: 5px;
+}
+.output-box button {
+  padding: 8px 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options {
+  text-align: left;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #2196f3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0770cd;
+}
