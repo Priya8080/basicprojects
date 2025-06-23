@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+             background: linear-gradient(to right, #cbe3ef, #96c1ec);
+             color: rgb(18, 16, 16);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            background-color: transparent;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        input{
+            padding: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button{
+             padding: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #selectBox{
+              padding: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <input type="text" id="inputBox" placeholder="Enter here">
+    <select id="selectBox">
+        <option value="MtoCM">Meter to Centimeter</option>
+        <option value="CMtoM">Centimeter to Meter</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+    <div id="result"></div>
+    </div>
+    <script>
+        function convert(){
+
+            let input = parseFloat(document.getElementById("inputBox").value);
+            let op = document.getElementById("selectBox").value;
+            let result;
+            let output;
+
+            
+            if(op === "MtoCM"){
+                result = input*100;
+                output = "Centimeter";
+            }
+            else{
+                result = input/100;
+                output = "Meter";
+            }
+        document.getElementById("result").innerHTML = "<strong>Result : </strong>" +result.toFixed(2)+" "+ output;
+        }
+    </script>
+</body>
+</html>
