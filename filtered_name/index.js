@@ -17,6 +17,5 @@ box.addEventListener("input", function () {
   const filtered = person.filter(function(name) {
     return name.toLowerCase().includes(keyword);
   });
-
   display(filtered); 
-});
+ });
